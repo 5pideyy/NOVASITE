@@ -86,7 +86,6 @@ function Root() {
               [ safeguarding the digital future ]
             </p>
             <div className="space-y-8">
-              <h2 className="text-3xl font-bold">About Us</h2>
               <p className="text-xl text-gray-300 leading-relaxed">
                 We are Team Nova, a top cybersecurity team recognized among the Top 20 globally on Hack The Box. Our team collaborates with law enforcement and industry experts to address real-world cyber threats. With national accolades from competitions like Pentathon-24 and police hackathons, we train future cybersecurity professionals dedicated to protecting the digital landscape. Supported by a network of alumni in Fortune 50 companies, we are driven by innovation and committed to securing the digital future.
               </p>
