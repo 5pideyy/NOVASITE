@@ -96,10 +96,10 @@ function Root() {
           {/* Logo Section */}
           <div className="md:w-1/3 flex flex-col gap-4 mt-10 md:mt-0">
             <img src={logo} alt="Team Nova Logo" className="w-1000 h-auto" />
-            <a href="https://app.hackthebox.com/myteam/overview" target="_blank">
+            <a href="https://ctftime.org/team/48032" target="_blank">
             <img src={ctftime} alt="Ctftime" className="w-20 h-auto mx-auto"/>
             </a>
-            <a href="https://app.hackthebox.com/myteam/overview" target="_blank">
+            <a href="https://app.hackthebox.com/teams/overview/5351" target="_blank">
             <div className="flex align-center gap-2 justify-center mx-auto">
               <img src={HackTheBoxIcon} alt="HackTheBox" className="w-5 h-5"/>
               <span className="font-bold text-green-300">HACK<p className="font-normal inline mx-1 text-white">THE</p>BOX</span>
