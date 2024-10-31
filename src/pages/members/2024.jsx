@@ -42,7 +42,7 @@ export const members_2024 = [
   {
     id: 6,
     name: "Manoj Kumar",
-    position: "Thanni can bro",
+    position: "Network puli",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -52,7 +52,7 @@ export const members_2024 = [
   {
     id: 7,
     name: "Hari Haran",
-    position: "Thanni can bro",
+    position: "ALL AREA GILLI",
     github: "#",
     linkedin: "#",
     instagram: "#",
