@@ -79,7 +79,7 @@ function BecomeMember() {
       </div>
 
       {/* Membership Form and Benefits Section */}
-      <section className="py-10 lg:py-20 font-space text-white">
+      <section className="pb-10 lg:pb-20 font-space text-white">
         <div className="max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="flex flex-wrap">
             {/* Membership Benefits on the Left */}

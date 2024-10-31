@@ -10,6 +10,7 @@ import shriram from "../../images/members/shriram.png";
 import LinkedIn from "../../images/icons/linkedin.png";
 import Instagram from "../../images/icons/instagram.png";
 import logo from "../../images/icons/novaflag.png"; // Replace with actual logo path
+import ctftime from "../../images/icons/ctftime.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
 function Root() {
@@ -46,11 +47,11 @@ function Root() {
               <img src={Instagram} alt="Instagram" className="w-6 h-6" />
             </a>
           )}
-          {email && (
+          {/* {email && (
             <a href={`mailto:${email}`} rel="noopener noreferrer">
               <i className="fas fa-envelope w-6 h-6 text-gray-500 hover:text-white"></i>
             </a>
-          )}
+          )} */}
           {hackthebox && (
             <a href={hackthebox} target="_blank" rel="noopener noreferrer">
               <img src={HackTheBoxIcon} alt="Hack The Box" className="w-6 h-6" />
@@ -93,8 +94,16 @@ function Root() {
           </div>
 
           {/* Logo Section */}
-          <div className="md:w-1/3 flex justify-end items-start mt-10 md:mt-0">
+          <div className="md:w-1/3 flex flex-col gap-4 mt-10 md:mt-0">
             <img src={logo} alt="Team Nova Logo" className="w-1000 h-auto" />
+            <a href="https://app.hackthebox.com/myteam/overview" target="_blank">
+            <img src={ctftime} alt="Ctftime" className="w-20 h-auto mx-auto"/>
+            </a>
+            <a href="https://app.hackthebox.com/myteam/overview" target="_blank">
+            <div className="flex align-center gap-2 justify-center mx-auto">
+              <img src={HackTheBoxIcon} alt="HackTheBox" className="w-5 h-5"/>
+              <span className="font-bold text-green-300">HACK<p className="font-normal inline mx-1 text-white">THE</p>BOX</span>
+            </div></a>
           </div>
           
         </div>

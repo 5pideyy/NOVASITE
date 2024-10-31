@@ -40,7 +40,7 @@ function Blogs() {
         </div>
 
         {/* Blog Cards */}
-        <div className="container mx-auto px-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="ontainer mx-auto px-4 flex flex-wrap gap-8 justify-center align-center">
           {blogs.map(({ title, description, link, image }, index) => (
             <div
               key={index}
