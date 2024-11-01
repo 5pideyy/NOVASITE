@@ -12,7 +12,7 @@ export const members_2024 = [
   {
     id: 1,
     name: "Kishore Ram ",
-    position: "ALL AREA GILLI",
+    position: "Reverse Engineer & Network Security",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -22,7 +22,7 @@ export const members_2024 = [
   {
     id: 2,
     name: "Abiya Primency",
-    position: "Hardware ",
+    position: "Hardware Security Researcher",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -32,7 +32,7 @@ export const members_2024 = [
   {
     id: 3,
     name: "Subhash",
-    position: "Bug Hunter",
+    position: "Bug Bounty Hunter",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -42,7 +42,7 @@ export const members_2024 = [
   {
     id: 4,
     name: "Shriram Krithick",
-    position: "Web Pentester",
+    position: "Web Security Analyst & OSINT",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -62,7 +62,7 @@ export const members_2024 = [
   {
     id: 6,
     name: "Hari Haran",
-    position: "ALL AREA GILLI",
+    position: "Reverse Engineer",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -72,7 +72,7 @@ export const members_2024 = [
   {
     id: 7,
     name: "Manoj Kumar",
-    position: "Network puli",
+    position: "Network Security",
     github: "#",
     linkedin: "#",
     instagram: "#",
