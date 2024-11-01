@@ -32,11 +32,11 @@ function Root() {
 
         {/* Social Icons Section */}
         <div className="flex justify-center items-center space-x-4 mt-4"> {/* Centered icons with even spacing */}
-          {github && (
+          {/* {github && (
             <a href={github} target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github w-6 h-6 text-gray-500 hover:text-white"></i>
             </a>
-          )}
+          )} */}
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
               <img src={LinkedIn} alt="LinkedIn" className="w-6 h-6" />
