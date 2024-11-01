@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import { MainNavbar } from "./components/navbar/MainNavbar.jsx";
 import Root from "./pages/home/Root";//
-import Event from "./pages/events/Event";//
+import Event from "./pages/events/Accomplishments";//
 import Blogs from "./pages/blogs/Blogs";//
 import Membership from "./pages/about/BecomeMember";//
 import Footer from "./components/footer/Footer";
@@ -12,7 +12,7 @@ import "./App.css";
 
 export const paths = {
   root: "/",
-  events: "/events",
+  events: "/accomplishments",
   blogs: "/blogs",
   membership: "/membership",
 }
@@ -23,7 +23,7 @@ const router = createHashRouter([
     element: <Root />,
   },
   {
-    path: "/events",
+    path: "/accomplishments",
     element: <Event />,
     children: [
 
