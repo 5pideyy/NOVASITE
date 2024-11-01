@@ -7,14 +7,19 @@ import vishal from "../../images/members/vishal.png";
 import pradyun from "../../images/members/pradyun.png";
 import subhash from "../../images/members/subhash.png";
 import shriram from "../../images/members/shriram.png";
+import kishoreram from "../../images/members/kishoreram.jpeg";
+import hariharan from "../../images/members/hariharan.jpeg";
+import abiya from "../../images/members/abiya.jpeg";
+import manojkumar from "../../images/members/manojkumar.jpeg";
 import LinkedIn from "../../images/icons/linkedin.png";
+import EmailIcon from "../../images/icons/email.png";
 import Instagram from "../../images/icons/instagram.png";
-import logo from "../../images/icons/novaflag.png"; // Replace with actual logo path
+import logo from "../../images/icons/novaflag.png"; 
 import ctftime from "../../images/icons/ctftime.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
 function Root() {
-  const img2024 = [blank, vishal, blank, subhash, shriram, pradyun,shriram,shriram];
+  const img2024 = [vishal, kishoreram,abiya,subhash, shriram, pradyun,hariharan,manojkumar];
 
   const members2024 = members_2024.map(
     ({ id, name, position, github, linkedin, instagram, email, hackthebox }) => (
@@ -42,16 +47,16 @@ function Root() {
               <img src={LinkedIn} alt="LinkedIn" className="w-6 h-6" />
             </a>
           )}
-          {instagram && (
+          {/* {instagram && (
             <a href={instagram} target="_blank" rel="noopener noreferrer">
               <img src={Instagram} alt="Instagram" className="w-6 h-6" />
             </a>
-          )}
-          {/* {email && (
-            <a href={`mailto:${email}`} rel="noopener noreferrer">
-              <i className="fas fa-envelope w-6 h-6 text-gray-500 hover:text-white"></i>
-            </a>
           )} */}
+          {email && (
+            <a href={`mailto:${email}`} rel="noopener noreferrer">
+              <img src={EmailIcon} alt="Email" className="w-8 h-8" />
+              </a>
+          )}
           {hackthebox && (
             <a href={hackthebox} target="_blank" rel="noopener noreferrer">
               <img src={HackTheBoxIcon} alt="Hack The Box" className="w-6 h-6" />
