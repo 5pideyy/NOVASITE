@@ -6,8 +6,8 @@ export const members_2024 = [
     github: "https://github.com/dfvsd",
     linkedin: "https://www.linkedin.com/in/dvsdfvs",
     instagram: "https://www.instagram.com/dfvsdvf/",
-    email: "mailto:rrvfdgb@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    email: "mailto:vishal.20au@kct.ac.in",
+    hackthebox: "https://app.hackthebox.com/users/736565",
   },
   {
     id: 1,
@@ -16,8 +16,8 @@ export const members_2024 = [
     github: "#",
     linkedin: "#",
     instagram: "#",
-    email: "mailto:hari.haran@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    email: "mailto:kishoreram.20ec@kct.ac.in",
+    hackthebox: "https://app.hackthebox.com/users/1216484",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ export const members_2024 = [
     github: "#",
     linkedin: "#",
     instagram: "#",
-    email: "mailto:hari.haran@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    email: "mailto:abiyaprimency.20ei@kct.ac.in",
+    hackthebox: "",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const members_2024 = [
     linkedin: "#",
     instagram: "#",
     email: "mailto:subhash@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    hackthebox: "https://app.hackthebox.com/users/1091202",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const members_2024 = [
     linkedin: "#",
     instagram: "#",
     email: "mailto:shriram.krithick@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    hackthebox: "https://app.hackthebox.com/users/1247714",
   },
   {
     id: 5,
@@ -56,8 +56,8 @@ export const members_2024 = [
     github: "#",
     linkedin: "#",
     instagram: "#",
-    email: "mailto:pradyun@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    email: "mailto:pradyun.22ec@kct.ac.in",
+    hackthebox: "https://app.hackthebox.com/users/1588827",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const members_2024 = [
     linkedin: "#",
     instagram: "#",
     email: "mailto:hari.haran@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    hackthebox: "https://app.hackthebox.com/users/1789469",
   },
   {
     id: 7,
@@ -77,6 +77,6 @@ export const members_2024 = [
     linkedin: "#",
     instagram: "#",
     email: "mailto:manoj.kumar@gmail.com",
-    hackthebox: "https://www.hackthebox.com/user/johndoe",
+    hackthebox: "",
   },
 ];
