@@ -79,7 +79,7 @@ function Particle() {
                 quantity: 5,
                 particles: {
                   color: {
-                    value: "#ff0000",
+                    value: "#ffffff",
                     animation: {
                       enable: true,
                       speed: 400,
@@ -245,7 +245,7 @@ function Particle() {
               },
             },
             color: {
-              value: "#ff0000",
+              value: "#ffffff",
               animation: {
                 h: {
                   count: 0,
