@@ -19,7 +19,7 @@ import ctftime from "../../images/icons/ctftime.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
 function Root() {
-  const img2024 = [vishal, kishoreram, abiya, subhash, shriram, pradyun, hariharan, manojkumar];
+  const img2024 = [vishal, kishoreram, abiya, subhash, shriram, pradyun, hariharan, blank];
 
   const members2024 = members_2024.map(
     ({ id, name, position, github, linkedin, instagram, email, hackthebox }) => (
