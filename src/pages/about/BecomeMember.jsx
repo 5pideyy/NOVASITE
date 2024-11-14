@@ -56,7 +56,7 @@ function BecomeMember() {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Particle />
       {/* Header */}
       <div className="flex flex-col justify-center items-center font-space my-5 py-5">
@@ -195,7 +195,7 @@ function BecomeMember() {
           </div>
         </div>
       </section>
-    </>
+      </div>
   );
 }
 

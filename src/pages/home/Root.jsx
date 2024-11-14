@@ -115,7 +115,7 @@ function Root() {
             href="#/membership"
             className="px-10 py-4 border-2 border-white text-white rounded-md text-xl font-semibold hover:bg-white hover:text-gray-900 transition-colors"
           >
-            Join the NOVA Legacy
+            Join the TEAM NOVA
           </a>
         </motion.div>
       </div>
