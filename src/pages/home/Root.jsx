@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "../../components/Particle/Particle";
 import { motion } from "framer-motion";
-import { members_2024 } from "../members/2024";
+import { members_2024 } from "../members/member";
 import blank from "../../images/members/blank.png";
 import vishal from "../../images/members/vishal.png";
 import pradyun from "../../images/members/pradyun.png";
