@@ -2,26 +2,31 @@ import React, { useState } from "react";
 import Particles from "../../components/Particle/Particle";
 import { motion, AnimatePresence } from "framer-motion";
 import { members_2024 } from "../members/member";
+import { mentors_2024 } from "../mentors/mentors"; // Import mentors data
 import blank from "../../images/members/blank.png";
 import vishal from "../../images/members/vishal.png";
-import pradyun from "../../images/members/pradyun.png";
+import kishoreram from "../../images/members/kishoreram.jpeg";
+import abiya from "../../images/members/abiya.jpeg";
 import subhash from "../../images/members/subhash.png";
 import shriram from "../../images/members/shriram.png";
-import kishoreram from "../../images/members/kishoreram.jpeg";
+import pradyun from "../../images/members/pradyun.png";
 import hariharan from "../../images/members/hariharan.jpeg";
-import abiya from "../../images/members/abiya.jpeg";
-import manojkumar from "../../images/members/manojkumar.jpeg";
-import LinkedIn from "../../images/icons/linkedin.png";
-import EmailIcon from "../../images/icons/email.png";
 import logo from "../../images/icons/novaflag.png";
 import ctftime from "../../images/icons/ctftime.png";
+import LinkedIn from "../../images/icons/linkedin.png";
+import EmailIcon from "../../images/icons/email.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
 function Root() {
   const [selectedTab, setSelectedTab] = useState("members");
 
+  // Images for members
   const img2024 = [vishal, kishoreram, abiya, subhash, shriram, pradyun, hariharan, blank];
 
+  // Images for mentors (use blank as default for mentors if no specific image is provided)
+  const imgMentors = [blank, blank]; // Add actual mentor images if available
+
+  // Members data (cards)
   const members2024 = members_2024.map(
     ({ id, name, position, linkedin, email, hackthebox }) => (
       <div
@@ -30,6 +35,41 @@ function Root() {
       >
         <img
           src={img2024[id]}
+          alt={name}
+          className="w-28 h-28 mb-4 rounded-full border border-gray-600 object-cover"
+        />
+        <h2 className="text-xl font-semibold text-gray-100 mb-1">{name}</h2>
+        <p className="text-sm font-light text-gray-400 mb-4 italic">{position}</p>
+        <div className="flex justify-center items-center space-x-4 mt-4">
+          {linkedin && (
+            <a href={linkedin} target="_blank" rel="noopener noreferrer">
+              <img src={LinkedIn} alt="LinkedIn" className="w-6 h-6" />
+            </a>
+          )}
+          {email && (
+            <a href={`mailto:${email}`} rel="noopener noreferrer">
+              <img src={EmailIcon} alt="Email" className="w-8 h-8" />
+            </a>
+          )}
+          {hackthebox && (
+            <a href={hackthebox} target="_blank" rel="noopener noreferrer">
+              <img src={HackTheBoxIcon} alt="Hack The Box" className="w-6 h-6" />
+            </a>
+          )}
+        </div>
+      </div>
+    )
+  );
+
+  // Mentors data (cards)
+  const mentors2024 = mentors_2024.map(
+    ({ id, name, position, linkedin, email, hackthebox }) => (
+      <div
+        key={id}
+        className="flex flex-col items-center bg-gray-900 bg-opacity-60 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src={imgMentors[id]}
           alt={name}
           className="w-28 h-28 mb-4 rounded-full border border-gray-600 object-cover"
         />
@@ -66,7 +106,6 @@ function Root() {
         
         {/* Header with Flex Layout for Content and Logo */}
         <div className="flex flex-col md:flex-row justify-between mb-16">
-          
           {/* Text Content */}
           <div className="md:w-2/3 pr-6">
             <motion.h1
@@ -143,7 +182,7 @@ function Root() {
         </div>
       </div>
 
-      {/* Members Section */}
+      {/* Members or Mentors Section */}
       <div className="text-left bg-gray-900 bg-opacity-0 text-white rounded-md py-16 px-8 shadow-lg backdrop-filter">
         <AnimatePresence>
           <motion.div
@@ -154,7 +193,7 @@ function Root() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-5"
           >
-            {members2024}
+            {selectedTab === "members" ? members2024 : mentors2024}
           </motion.div>
         </AnimatePresence>
       </div>
