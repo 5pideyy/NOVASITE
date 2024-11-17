@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "../../components/Particle/Particle";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { members_2024 } from "../members/member";
 import blank from "../../images/members/blank.png";
 import vishal from "../../images/members/vishal.png";
@@ -13,16 +13,17 @@ import abiya from "../../images/members/abiya.jpeg";
 import manojkumar from "../../images/members/manojkumar.jpeg";
 import LinkedIn from "../../images/icons/linkedin.png";
 import EmailIcon from "../../images/icons/email.png";
-import Instagram from "../../images/icons/instagram.png";
-import logo from "../../images/icons/novaflag.png"; 
+import logo from "../../images/icons/novaflag.png";
 import ctftime from "../../images/icons/ctftime.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
 function Root() {
+  const [selectedTab, setSelectedTab] = useState("members");
+
   const img2024 = [vishal, kishoreram, abiya, subhash, shriram, pradyun, hariharan, blank];
 
   const members2024 = members_2024.map(
-    ({ id, name, position, github, linkedin, instagram, email, hackthebox }) => (
+    ({ id, name, position, linkedin, email, hackthebox }) => (
       <div
         key={id}
         className="flex flex-col items-center bg-gray-900 bg-opacity-60 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
@@ -34,8 +35,6 @@ function Root() {
         />
         <h2 className="text-xl font-semibold text-gray-100 mb-1">{name}</h2>
         <p className="text-sm font-light text-gray-400 mb-4 italic">{position}</p>
-
-        {/* Social Icons Section */}
         <div className="flex justify-center items-center space-x-4 mt-4">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -92,16 +91,17 @@ function Root() {
           <div className="md:w-1/3 flex flex-col gap-4 mt-10 md:mt-0">
             <img src={logo} alt="Team Nova Logo" className="w-1000 h-auto" />
             <a href="https://ctftime.org/team/48032" target="_blank">
-              <img src={ctftime} alt="Ctftime" className="w-20 h-auto mx-auto"/>
+              <img src={ctftime} alt="Ctftime" className="w-20 h-auto mx-auto" />
             </a>
             <a href="https://app.hackthebox.com/teams/overview/5351" target="_blank">
               <div className="flex align-center gap-2 justify-center mx-auto">
-                <img src={HackTheBoxIcon} alt="HackTheBox" className="w-5 h-5"/>
-                <span className="font-bold text-green-300">HACK<p className="font-normal inline mx-1 text-white">THE</p>BOX</span>
+                <img src={HackTheBoxIcon} alt="Hack The Box" className="w-5 h-5" />
+                <span className="font-bold text-green-300">
+                  HACK<p className="font-normal inline mx-1 text-white">THE</p>BOX
+                </span>
               </div>
             </a>
           </div>
-          
         </div>
 
         {/* Call to Action Button */}
@@ -120,15 +120,43 @@ function Root() {
         </motion.div>
       </div>
 
-      {/* Members Section */}
-      <div className="text-left my-24 bg-gray-900 bg-opacity-0 text-white rounded-md py-16 px-8 shadow-lg backdrop-filter">
-        <h2 className="text-4xl text-center text-gray-100 uppercase mb-12 tracking-widest">Our Team</h2>
-        <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-16 font-light text-center italic">
-          Meet the experts driving Nova forward with passion, skill, and a commitment to cybersecurity.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-5">
-          {members2024}
+      {/* Toggle Tabs Section */}
+      <div className="text-center mt-24 mb-12">
+        <div className="flex justify-center items-center text-center">
+          <span
+            onClick={() => setSelectedTab("members")}
+            className={`cursor-pointer text-4xl uppercase tracking-widest ${
+              selectedTab === "members" ? "font-bold text-gray-100" : "font-normal text-gray-500"
+            }`}
+          >
+            Core Members
+          </span>
+          <span className="text-4xl font-normal uppercase tracking-widest text-gray-500 mx-4">|</span>
+          <span
+            onClick={() => setSelectedTab("mentors")}
+            className={`cursor-pointer text-4xl uppercase tracking-widest ${
+              selectedTab === "mentors" ? "font-bold text-gray-100" : "font-normal text-gray-500"
+            }`}
+          >
+            Team Mentors
+          </span>
         </div>
+      </div>
+
+      {/* Members Section */}
+      <div className="text-left bg-gray-900 bg-opacity-0 text-white rounded-md py-16 px-8 shadow-lg backdrop-filter">
+        <AnimatePresence>
+          <motion.div
+            key={selectedTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-5"
+          >
+            {members2024}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );
