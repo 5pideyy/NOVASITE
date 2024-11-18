@@ -17,6 +17,10 @@ import LinkedIn from "../../images/icons/linkedin.png";
 import EmailIcon from "../../images/icons/email.png";
 import HackTheBoxIcon from "../../images/icons/hackthebox.png";
 
+// Sponsor Images and URLs
+import KIlogo from "../../images/icons/KI.png";
+import IqubeLogo from "../../images/icons/iqube.jpg";
+
 function Root() {
   const [selectedTab, setSelectedTab] = useState("members");
 
@@ -74,7 +78,7 @@ function Root() {
           className="w-28 h-28 mb-4 rounded-full border border-gray-600 object-cover"
         />
         <h2 className="text-xl font-semibold text-gray-100 mb-1">{name}</h2>
-        <p className="text-sm font-light text-gray-400 mb-4 italic">{position}</p>
+        <p className="text-sm font-light text-gray-400 mb-4 italic text-center whitespace-pre-line">{position}</p>
         <div className="flex justify-center items-center space-x-4 mt-4">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -197,6 +201,72 @@ function Root() {
           </motion.div>
         </AnimatePresence>
       </div>
+
+{/* Sponsors Section */}
+<div className="text-center mt-16">
+  <h2 className="text-4xl font-medium text-gray-200 uppercase mb-6 tracking-widest">
+    Our Proud Sponsors
+  </h2>
+  
+  <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-10 font-light italic">
+    "Together with our sponsors, we are shaping the future of cybersecurity."
+  </p>
+
+  <motion.div
+    className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 lg:px-0"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    {/* Sponsor 1 - KCT */}
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-lg mx-auto">
+      <a href="https://kct.ac.in" target="_blank" rel="noopener noreferrer">
+        <img
+          src={KIlogo}
+          alt="Kumaraguru College of Technology"
+          className="w-full max-h-28 mb-6 object-contain"
+        />
+      </a>
+      <h2 className="text-2xl font-semibold text-gray-100 mb-4 text-left">
+        Kumaraguru College of Technology
+      </h2>
+      <p className="text-sm text-gray-300 font-light text-left leading-relaxed mb-4">
+        Kumaraguru College of Technology, a premier engineering institution in Coimbatore, India, offers a range of undergraduate and postgraduate programs. Established in 1984, KCT is committed to academic excellence and innovation, providing state-of-the-art facilities and fostering a vibrant learning environment.
+      </p>
+      <a
+        href="https://kct.ac.in"
+        target="_blank"
+        className="text-blue-400 hover:underline font-medium text-left block"
+        rel="noopener noreferrer"
+      >
+      </a>
+    </div>
+
+    {/* Sponsor 2 - iQube */}
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-lg mx-auto">
+      <a href="https://iqubekct.ac.in" target="_blank" rel="noopener noreferrer">
+        <img
+          src={IqubeLogo}
+          alt="iQube"
+          className="w-full max-h-28 mb-6 object-contain"
+        />
+      </a>
+      <h2 className="text-2xl font-semibold text-gray-100 mb-4 text-left">iQube</h2>
+      <p className="text-sm text-gray-300 font-light text-left leading-relaxed mb-4">
+        iQube is the Technology Innovation Centre at KCT, dedicated to nurturing tech enthusiasts by providing resources, mentorship, and opportunities to transform innovative ideas into viable products. It focuses on domains like Embedded and IoT, Software Development, Cyber Security, AR/VR Development, Mechanical Design, and AI/ML.
+      </p>
+      <a
+        href="https://iqubekct.ac.in"
+        target="_blank"
+        className="text-blue-400 hover:underline font-medium text-left block"
+        rel="noopener noreferrer"
+      >
+      </a>
+    </div>
+  </motion.div>
+</div>
+
+
     </div>
   );
 }

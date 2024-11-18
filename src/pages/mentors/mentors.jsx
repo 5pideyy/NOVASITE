@@ -2,7 +2,7 @@ export const mentors_2024 = [
     {
       id: 0,
       name: "Ilyas Essar",
-      position: "Sr.Cybersecurity Analyst",
+      position: "Sr.Cybersecurity Analyst,\nCanada",
       github: "https://github.com/dfvsd",
       linkedin: "https://www.linkedin.com/in/dvsdfvs",
       instagram: "https://www.instagram.com/dfvsdvf/",
@@ -11,8 +11,8 @@ export const mentors_2024 = [
     },
     {
       id: 1,
-      name: "Nirosh Kumer ",
-      position: "iQube Lead , Kumaraguru Instituions",
+      name: "Nirosh Kumar H",
+      position: "Lead @ iQube , Kumaraguru Instituions",
       github: "#",
       linkedin: "#",
       instagram: "#",
