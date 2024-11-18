@@ -202,7 +202,8 @@ function Root() {
         </AnimatePresence>
       </div>
 
-{/* Sponsors Section */}
+
+{/* 
 <div className="text-center mt-16">
   <h2 className="text-4xl font-medium text-gray-200 uppercase mb-6 tracking-widest">
     Our Proud Sponsors
@@ -218,7 +219,7 @@ function Root() {
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
   >
-    {/* Sponsor 1 - KCT */}
+
     <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-lg mx-auto">
       <a href="https://kct.ac.in" target="_blank" rel="noopener noreferrer">
         <img
@@ -242,7 +243,7 @@ function Root() {
       </a>
     </div>
 
-    {/* Sponsor 2 - iQube */}
+
     <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-lg mx-auto">
       <a href="https://iqubekct.ac.in" target="_blank" rel="noopener noreferrer">
         <img
@@ -265,7 +266,7 @@ function Root() {
     </div>
   </motion.div>
 </div>
-
+ */}
 
     </div>
   );
