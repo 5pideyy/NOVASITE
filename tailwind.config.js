@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography"),],
 }
 
 // const withMT = require("@material-tailwind/react/utils/withMT");
