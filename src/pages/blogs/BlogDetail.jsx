@@ -12,7 +12,7 @@ function BlogDetail() {
 
   useEffect(() => {
     // Dynamically fetch the Markdown file within `/src/pages/blogs/md/`
-    const filePath = `/md/${slug}.md`;
+    const filePath = `/blogs/md/${slug}.md`;
 
     fetch(filePath)
       .then((response) => {
@@ -26,7 +26,7 @@ function BlogDetail() {
         const transformedText = text.replace(/!\[\[(.*?)\]\]/g, (match, p1) => {
           const imageName = p1.trim(); // Extract image name
           const encodedImageName = encodeURIComponent(imageName); // Encode the image name
-          const resolvedPath = `/src/pages/blogs/images/${encodedImageName}`; // Construct the full path
+          const resolvedPath = `/blogs/images/${encodedImageName}`; // Construct the full path
           return `![${imageName}](${resolvedPath})`; // Return standard Markdown image syntax
         });
         setContent(transformedText);
