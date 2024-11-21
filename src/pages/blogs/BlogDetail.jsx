@@ -12,7 +12,7 @@ function BlogDetail() {
 
   useEffect(() => {
     // Dynamically fetch the Markdown file within `/src/pages/blogs/md/`
-    const filePath = `/src/pages/blogs/md/${slug}.md`;
+    const filePath = `/md/${slug}.md`;
 
     fetch(filePath)
       .then((response) => {
