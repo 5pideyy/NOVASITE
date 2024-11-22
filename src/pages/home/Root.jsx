@@ -25,7 +25,7 @@ function Root() {
   const [selectedTab, setSelectedTab] = useState("members");
 
   // Images for members
-  const img2024 = [vishal, kishoreram, abiya, subhash, shriram, pradyun, hariharan, blank];
+  const img2024 = [vishal, abiya, subhash, shriram, pradyun, hariharan, blank];
 
   // Images for mentors (use blank as default for mentors if no specific image is provided)
   const imgMentors = [blank, blank]; // Add actual mentor images if available
