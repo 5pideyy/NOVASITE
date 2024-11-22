@@ -185,7 +185,7 @@ function BecomeMember() {
                   <p className="py-2 text-green-400 italic font-light">{response}</p>
                   <button
                     type="submit"
-                    className="bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white rounded-full py-2 px-4 hover:scale-105 transition duration-300 font-semibold"
+                    className="bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg py-3 px-6 font-semibold shadow-md hover:shadow-lg hover:bg-gray-600 transition-all duration-300 ease-in-out"
                   >
                     Submit Application
                   </button>

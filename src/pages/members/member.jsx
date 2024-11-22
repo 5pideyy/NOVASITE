@@ -9,18 +9,18 @@ export const members_2024 = [
     email: "mailto:vishal.20au@kct.ac.in",
     hackthebox: "https://app.hackthebox.com/users/736565",
   },
+  // {
+  //   id: 1,
+  //   name: "Kishore Ram ",
+  //   position: "Reverse Engineer & Network Security",
+  //   github: "#",
+  //   linkedin: "#",
+  //   instagram: "#",
+  //   email: "mailto:kishoreram.20ec@kct.ac.in",
+  //   hackthebox: "https://app.hackthebox.com/users/1216484",
+  // },
   {
     id: 1,
-    name: "Kishore Ram ",
-    position: "Reverse Engineer & Network Security",
-    github: "#",
-    linkedin: "#",
-    instagram: "#",
-    email: "mailto:kishoreram.20ec@kct.ac.in",
-    hackthebox: "https://app.hackthebox.com/users/1216484",
-  },
-  {
-    id: 2,
     name: "Abiya Primency",
     position: "Hardware Security Researcher",
     github: "#",
@@ -30,7 +30,7 @@ export const members_2024 = [
     hackthebox: "",
   },
   {
-    id: 3,
+    id: 2,
     name: "Subhash",
     position: "Bug Bounty Hunter",
     github: "#",
@@ -40,7 +40,7 @@ export const members_2024 = [
     hackthebox: "https://app.hackthebox.com/users/1091202",
   },
   {
-    id: 4,
+    id: 3,
     name: "Shriram Krithick",
     position: "Web Security Analyst & OSINT",
     github: "#",
@@ -50,7 +50,7 @@ export const members_2024 = [
     hackthebox: "https://app.hackthebox.com/users/1247714",
   },
   {
-    id: 5,
+    id: 4,
     name: "Pradyun",
     position: "Web Pentester",
     github: "#",
@@ -60,7 +60,7 @@ export const members_2024 = [
     hackthebox: "https://app.hackthebox.com/users/1588827",
   },
   {
-    id: 6,
+    id: 5,
     name: "Hari Haran",
     position: "Reverse Engineer",
     github: "#",
@@ -70,7 +70,7 @@ export const members_2024 = [
     hackthebox: "https://app.hackthebox.com/users/1789469",
   },
   {
-    id: 7,
+    id: 6,
     name: "Manoj Kumar",
     position: "Network Security",
     github: "#",
