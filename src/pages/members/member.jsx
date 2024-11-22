@@ -1,7 +1,8 @@
 export const members_2024 = [
   {
     id: 0,
-    name: "Vishal",
+    name: "Vishal ML",
+    alias: "@0xl4tmur",
     position: "Red Teamer",
     github: "https://github.com/dfvsd",
     linkedin: "https://www.linkedin.com/in/dvsdfvs",
@@ -12,6 +13,7 @@ export const members_2024 = [
   // {
   //   id: 1,
   //   name: "Kishore Ram ",
+  //   alias: "Cipher",
   //   position: "Reverse Engineer & Network Security",
   //   github: "#",
   //   linkedin: "#",
@@ -22,6 +24,7 @@ export const members_2024 = [
   {
     id: 1,
     name: "Abiya Primency",
+    alias: "@nosflo",
     position: "Hardware Security Researcher",
     github: "#",
     linkedin: "#",
@@ -32,6 +35,7 @@ export const members_2024 = [
   {
     id: 2,
     name: "Subhash",
+    alias: "@panth3r",
     position: "Bug Bounty Hunter",
     github: "#",
     linkedin: "#",
@@ -42,6 +46,7 @@ export const members_2024 = [
   {
     id: 3,
     name: "Shriram Krithick",
+    alias: "@skyfi",
     position: "Web Security Analyst & OSINT",
     github: "#",
     linkedin: "#",
@@ -52,7 +57,8 @@ export const members_2024 = [
   {
     id: 4,
     name: "Pradyun",
-    position: "Web Pentester",
+    alias: "@spideyyy",
+    position: "Pentester",
     github: "#",
     linkedin: "#",
     instagram: "#",
@@ -62,6 +68,7 @@ export const members_2024 = [
   {
     id: 5,
     name: "Hari Haran",
+    alias: "@deadend",
     position: "Reverse Engineer",
     github: "#",
     linkedin: "#",
@@ -72,6 +79,7 @@ export const members_2024 = [
   {
     id: 6,
     name: "Manoj Kumar",
+    alias: "@NetNinja",
     position: "Network Security",
     github: "#",
     linkedin: "#",

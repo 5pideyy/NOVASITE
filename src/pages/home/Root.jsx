@@ -32,7 +32,7 @@ function Root() {
 
   // Members data (cards)
   const members2024 = members_2024.map(
-    ({ id, name, position, linkedin, email, hackthebox }) => (
+    ({ id, name, alias, position, linkedin, email, hackthebox }) => (
       <div
         key={id}
         className="flex flex-col items-center bg-gray-900 bg-opacity-60 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
@@ -42,7 +42,8 @@ function Root() {
           alt={name}
           className="w-28 h-28 mb-4 rounded-full border border-gray-600 object-cover"
         />
-        <h2 className="text-xl font-semibold text-gray-100 mb-1">{name}</h2>
+        <h2 className="text-xl font-semibold text-gray-100 mb-1 text-center whitespace-pre-line">{name}</h2>
+        <p className="text-sm font-normal text-gray-400 mb-4 text-center">{alias}</p> 
         <p className="text-sm font-light text-gray-400 mb-4 italic">{position}</p>
         <div className="flex justify-center items-center space-x-4 mt-4">
           {linkedin && (
@@ -64,6 +65,7 @@ function Root() {
       </div>
     )
   );
+  
 
   // Mentors data (cards)
   const mentors2024 = mentors_2024.map(
