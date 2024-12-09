@@ -9,6 +9,7 @@ export const members_2024 = [
     instagram: "https://www.instagram.com/dfvsdvf/",
     email: "mailto:vishal.20au@kct.ac.in",
     hackthebox: "https://app.hackthebox.com/users/736565",
+    about: "Ilyas has over 5 years of experience in cybersecurity, specializing in threat analysis and ethical hacking. He is passionate about securing digital infrastructures and mentoring young professionals in the cybersecurity field.",
   },
   // {
   //   id: 1,
@@ -31,6 +32,7 @@ export const members_2024 = [
     instagram: "#",
     email: "mailto:abiyaprimency.20ei@kct.ac.in",
     hackthebox: "",
+    about: "Ilyas has over 5 years of experience in cybersecurity, specializing in threat analysis and ethical hacking. He is passionate about securing digital infrastructures and mentoring young professionals in the cybersecurity field.",
   },
   {
     id: 2,

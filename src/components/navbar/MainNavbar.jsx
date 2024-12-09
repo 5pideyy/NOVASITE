@@ -16,11 +16,11 @@ const navListItems = [
     icon: HomeIcon,
     link: "#/",
   },
-  {
-    label: "Accomplishments",
-    icon: CubeTransparentIcon,
-    link: "#/accomplishments",
-  },
+  // {
+  //   label: "Accomplishments",
+  //   icon: CubeTransparentIcon,
+  //   link: "#/accomplishments",
+  // },
   {
     label: "Blogs",
     icon: BookOpenIcon,
