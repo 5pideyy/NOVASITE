@@ -1,11 +1,11 @@
 import {
   createHashRouter,
   RouterProvider,
+  Navigate
 } from "react-router-dom";
 import { MainNavbar } from "./components/navbar/MainNavbar.jsx";
 import Root from "./pages/home/Root";
 // import Event from "./pages/events/Accomplishments";
-import Blogs from "./pages/blogs/Blogs";
 import Membership from "./pages/about/BecomeMember";
 import Footer from "./components/footer/Footer";
 import "./App.css";
@@ -31,7 +31,7 @@ const router = createHashRouter([
   // },
   {
     path: "/blogs",
-    element: <Blogs />,
+    element: <Navigate to="https://0xp0p3ye.github.io" replace />, 
   },
   {
     path: "/membership",
