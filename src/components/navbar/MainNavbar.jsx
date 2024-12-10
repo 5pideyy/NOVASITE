@@ -24,7 +24,7 @@ const navListItems = [
   {
     label: "Blogs",
     icon: BookOpenIcon,
-    link: "https://0xp0p3ye.github.io",
+    link: "https://5pideyy.github.io",
   },
   {
     label: "Become A Member",
