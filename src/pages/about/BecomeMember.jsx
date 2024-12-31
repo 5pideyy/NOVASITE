@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Particle from "../../components/Particle/Particle";
-import Typewriters from "typewriter-effect";
-import emailjs from "emailjs-com"; // Import emailjs
-import { FaUserFriends, FaLaptopCode, FaShieldAlt, FaHandsHelping } from "react-icons/fa"; // Icons for perks
+import { FaUserFriends, FaLaptopCode, FaShieldAlt, FaHandsHelping } from "react-icons/fa";
 
 function BecomeMember() {
   const [formData, setFormData] = useState({
@@ -21,24 +19,22 @@ function BecomeMember() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      phone: formData.phone,
-      interests: formData.interests,
-      message: formData.message,
-    };
+    const webhookURL = "https://discord.com/api/webhooks/1323711916245385226/gAcWwjndH1DCi3G8L_5sw7atZoFe2eo7wllUBW93xWeB8uhQNEVHW3p4KmfHwqJ86Von"; // Replace with your webhook URL
 
-    emailjs
-      .send(
-        'service_0918cuh', // Replace with your EmailJS Service ID
-        'template_5jctsar', // Replace with your EmailJS Template ID
-        templateParams,
-        'OfwUCt284r7meTA7n' // Replace with your EmailJS User ID (or public key)
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
+    // Discord message content
+    const discordMessage = {
+      content: `New Membership Request:\n\n**Name:** ${formData.name}\n**Email:** ${formData.email}\n**Phone:** ${formData.phone}\n**Interests:** ${formData.interests}\n**Message:** ${formData.message}\n\n<@&1221570078886199356> <@&1231973239085863093> <@&1236982959471460412>`,
+    };    
+
+    fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(discordMessage),
+    })
+      .then((res) => {
+        if (res.ok) {
           setResponse("Your membership request has been submitted successfully!");
           setFormData({
             name: "",
@@ -47,12 +43,14 @@ function BecomeMember() {
             interests: "",
             message: "",
           });
-        },
-        (error) => {
-          console.log(error.text);
+        } else {
           setResponse("Failed to submit your request. Please try again later.");
         }
-      );
+      })
+      .catch((error) => {
+        console.error("Error sending message to Discord:", error);
+        setResponse("Failed to submit your request. Please try again later.");
+      });
   };
 
   return (
@@ -195,7 +193,7 @@ function BecomeMember() {
           </div>
         </div>
       </section>
-      </div>
+    </div>
   );
 }
 
