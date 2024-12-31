@@ -9,15 +9,15 @@ export const mentors_2024 = [
       email: "mailto:vishal.20au@kct.ac.in",
       hackthebox: "https://app.hackthebox.com/users/736565",
     },
-    {
-      id: 1,
-      name: "Nirosh Kumar H",
-      position: "Lead @ iQube , Kumaraguru Instituions",
-      github: "#",
-      linkedin: "#",
-      instagram: "#",
-      email: "mailto:kishoreram.20ec@kct.ac.in",
-      hackthebox: "https://app.hackthebox.com/users/1216484",
-    },
+    // {
+    //   id: 1,
+    //   name: "Nirosh Kumar H",
+    //   position: "Lead @ iQube , Kumaraguru Instituions",
+    //   github: "#",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "mailto:kishoreram.20ec@kct.ac.in",
+    //   hackthebox: "https://app.hackthebox.com/users/1216484",
+    // },
   ];
   
